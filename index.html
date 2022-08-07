@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fridge List and timer</title>
+    <!-- CSS Import -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- End of CSS Import -->
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Fonts -->
+  </head>
+  <body>
+    <!-- Heading Wrapper-->
+    <div class="header">
+      <div class="head">
+        <!-- Greeting -->
+        <section class="greeting">
+          <h2 class="title">
+            Hello, <input type="text" id="name" placeholder="Name here" />
+          </h2>
+          <button onclick="window.location.href='#todo-list'">TO LIST</button>
+        </section>
+        <!-- End of Greeting -->
+      </div>
+    </div>
+    <!-- End of Heading Wrapper -->
+    <!-- App Wrapper -->
+    <main class="app">
+      <!-- New Todo -->
+      <section class="create-todo">
+        <h1 class="mainTitle">Fridge List</h1>
+
+        <form id="new-todo-form">
+          <h4>Food item</h4>
+          <input
+            type="text"
+            placeholder="e.g. Leftover pasta"
+            name="content"
+            id="content"
+          />
+
+          <div class="separater"></div>
+
+          <h4>Days since opened / made</h4>
+          <input
+            type="text"
+            value="0"
+            placeholder="e.g. 0"
+            name="daysSince"
+            id="daysSince"
+          />
+
+          <h4>Estimate days left</h4>
+          <input type="text" placeholder="e.g. 3" name="expiry" id="expiry" />
+
+          <div class="separater"></div>
+
+          <h4>Category</h4>
+          <div class="options">
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category1"
+                value="list0"
+              />
+              <span class="bubble list0"></span>
+              <div>Short term</div>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                checked="checked"
+                name="category"
+                id="category2"
+                value="list1"
+              />
+              <span class="bubble list1"></span>
+              <div>Regular</div>
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="category"
+                id="category3"
+                value="list2"
+              />
+              <span class="bubble list2"></span>
+              <div>Long lasting</div>
+            </label>
+          </div>
+
+          <input type="submit" value="Add item" />
+        </form>
+      </section>
+      <!-- End of New Todo -->
+
+      <!-- Todo List -->
+      <section class="todo-list">
+        <h3>SHORT TERM</h3>
+        <div class="list" id="todo-list"></div>
+      </section>
+
+      <section class="todo-list1">
+        <h3>REGULAR</h3>
+        <div class="list" id="todo-list1"></div>
+      </section>
+
+      <section class="todo-list2">
+        <h3>LONG LASTING</h3>
+        <div class="list" id="todo-list2"></div>
+      </section>
+      <!-- End of Todo List -->
+    </main>
+    <!-- End of App Wrapper -->
+
+    <!-- JS Import -->
+    <script src="main.js"></script>
+    <!-- End of JS Import -->
+  </body>
+</html>
