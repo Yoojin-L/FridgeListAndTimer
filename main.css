@@ -62,7 +62,7 @@ body {
 .header{
 	height: 75vh;
 	width: 100%;
-	background-image: url(/food1.jpg);
+	background-image: url('food1.jpg');
 	display: flex;
 	justify-content: center;
 	align-items: center;
