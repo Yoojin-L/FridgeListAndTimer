@@ -5,6 +5,11 @@ FridgeListAndTimer is a simple and user-friendly web app that helps users keep t
 
 Standout features include a clean, responsive UI, persistent data storage using localStorage, and a visual progress indicator for each item's freshness. The project is ideal for students, families, or anyone looking to organize their fridge contents with minimal hassle.
 
+## Technologies
+- HTML5
+- CSS3 (custom styles, responsive design)
+- JavaScript (ES6, DOM manipulation, localStorage)
+
 ## Features
 - Clean, responsive interface
 - Personalized greeting with persistent username
@@ -27,10 +32,6 @@ Standout features include a clean, responsive UI, persistent data storage using 
 
 - All data is saved locally; no sign-up or backend required
 
-## Tech Stack
-- HTML5
-- CSS3 (custom styles, responsive design)
-- JavaScript (ES6, DOM manipulation, localStorage)
 
 ## Setup Instructions
 1. Clone or download this repository to local machine.
